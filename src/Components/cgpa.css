@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(135deg, #1c7265 0%, #d27c33 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.transparent-box {
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    linear-gradient(135deg, rgba(28, 114, 101, 0.6), rgba(210, 50, 30, 0.6));
+  padding: 30px;
+  border-radius: 16px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  max-width: 900px;
+  width: 90%;
+  margin: 8vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 75vh;
+  box-sizing: border-box;
+}
+.card-box{
+    background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    linear-gradient(135deg, rgba(28, 114, 101, 0.6), rgba(210, 50, 30, 0.6));
+    width:40vh;
+    height:33vh;
+    margin-bottom: 50px;
+    justify-content: center;
+    display: grid;
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    margin:20px
+}
+
+/* Hide arrows in Chrome, Safari, Edge */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
