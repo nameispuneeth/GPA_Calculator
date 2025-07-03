@@ -1,4 +1,3 @@
-// CGPAChart.js
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -21,23 +20,9 @@ ChartJS.register(
 );
 
 export default function CGPAChart({ data }) {
-    const backgroundPlugin = {
-  id: 'custom_canvas_background_color',
-  beforeDraw: (chart) => {
-    const ctx = chart.canvas.getContext('2d');
-    ctx.save();
-    ctx.globalCompositeOperation = 'destination-over';
-
-    
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.1)'; 
-    ctx.fillRect(0, 0, chart.width, chart.height);
-
-    ctx.restore();
-  }
-};
     let temp=[];
     data.map((val,ind)=>{
-        temp.push(`Semester - ${ind+1}`);
+       return temp.push(`Semester - ${ind+1}`);
     })
   return (
   <div className='bg-white/10 backdrop-blur-md p-6 rounded-md shadow-md'>
@@ -51,7 +36,9 @@ export default function CGPAChart({ data }) {
         tension: 0.5
     }],
   }} 
+  
   options={{
+    responsive:true,
     plugins: {
       title: {
         display: true,

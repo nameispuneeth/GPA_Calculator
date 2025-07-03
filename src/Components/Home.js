@@ -22,19 +22,19 @@ export default function Example() {
     <header className="absolute inset-x-0 top-0 z-50">
       <nav className="relative flex items-center justify-between p-4 sm:px-6 lg:px-8 backdrop-blur-md">
               <div className="flex lg:flex-1">
-                <a href="" className="-m-1.5 p-1.5">
+                <p className="-m-1.5 p-1.5">
                   <button className='absolute top-[10px] left-[10px] font-bold text-white  bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition flex items-center gap-3 rounded-full p-2 w-13' onClick={()=>navigate("/")}><AiTwotoneBoxPlot /></button>
 
-                </a>
+                </p>
               </div>
 
             
             <div className="flex items-center gap-6">
           <div className="hidden sm:flex gap-x-6 lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} className="text-base text-white hover:text-yellow-200 transition hover:cursor-pointer" onClick={()=>navigate(item.href)}>
+              <p key={item.npme} className="text-base text-white hover:text-yellow-200 transition hover:cursor-pointer" onClick={()=>navigate(item.href)}>
                 {item.name} 
-              </a>
+              </p>
             ))}
           </div>
 
@@ -82,11 +82,11 @@ export default function Example() {
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
+            <p
             className="rounded-full bg-white/20 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg  text-white backdrop-blur-md shadow-md hover:bg-white/30 hover:shadow-lg hover:shadow-yellow-300/30 transition duration-300" onClick={()=>navigate('/gotocgpa')}
             >
             Use Calculator
-            </a>
+            </p>
             </div>
 
         </div>
@@ -112,8 +112,8 @@ export default function Example() {
               <path strokeLinecap="round" strokeLinejoin="round" d={item.imgUrl}/>
             </svg>
 
-          <h5 className="text-xl font-bold mb-0" key={item.heading}>{item.heading}</h5>
-          <p className="text-sm leading-relaxed font-light mt-0" key={item.para}>
+          <h5 className="text-xl font-bold m-0" key={item.heading}>{item.heading}</h5>
+          <p className="text-sm leading-relaxed font-light m-0" key={item.para}>
             {item.para}
           </p>
       </div>
