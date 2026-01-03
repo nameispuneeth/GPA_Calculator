@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# GPA Calculator (SGPA & CGPA)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web-based **GPA Calculator** that allows students to calculate both **SGPA** and **CGPA** easily.  
+The project also visualizes **CGPA progress using Chart.js**, making it easier to track academic growth over time.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Calculate **SGPA (Semester Grade Point Average)**
+- Calculate **CGPA (Cumulative Grade Point Average)**
+- Visualize CGPA progress with a **line chart (Chart.js)**
+- Automatic and accurate calculations
+- Clean, simple, and student-friendly UI
+- Fast and lightweight
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React.js**
+- **Tailwind CSS**  
+- **Chart.js** – CGPA progress visualization  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## How It Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### SGPA Calculation
+1. User enters **grades** and **credits** for a semester  
+2. The app calculates total grade points  
+3. SGPA is computed using:
 
-### `npm run build`
+#### SGPA = Total Grade Points / Total Credits
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### CGPA Calculation
+1. User enters multiple semester SGPAs  
+2. CGPA is calculated cumulatively  
+3. A **line chart** displays CGPA progress across semesters
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## CGPA Visualization
 
-### `npm run eject`
+- Uses **Chart.js** to plot CGPA values
+- Helps students visually track academic improvement over time
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Screenshots 
+- ### Home Page :
+  <img width="1892" height="866" alt="Screenshot 2025-08-31 233904" src="https://github.com/user-attachments/assets/52bac20a-aa9f-4cc6-9510-6b5125d82c2b" />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ### SGPA Calculation
+  <img width="1884" height="867" alt="Screenshot 2025-08-31 233931" src="https://github.com/user-attachments/assets/37508695-11be-4eaf-8cd5-c36497de28a3" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- ### CGPA Calculation
+  <img width="1193" height="850" alt="Screenshot 2025-08-31 234004" src="https://github.com/user-attachments/assets/a881ca6e-86a6-48c1-9321-fa637d5ef206" />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Run Locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
+```bash
+git clone https://github.com/nameispuneeth/GPA_Calculator.git
+```
+2. Run index.html in browser.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Use Case 
+- Semester Wise CGPA and SGPA Calculation.
+- Tracking overall academic performance
+- Visual analysis of CGPA growth
